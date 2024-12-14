@@ -1,0 +1,14 @@
+==What is the Purpose Of Java
+1. To Write minimal and Concise Code
+2. To Introduce benefits Functional Programming
+3. To enable parallel Programming - To Write More Compatible Code for multi core processors-
+
+==Java 8 Features
+1. Lambda Expressions (Anonymous Functions)
+2. Stream API
+3. Data and TIME API
+4. Base64 Encode and Decode
+5. Method Reference and Constructor Reference
+6. Introduction of Default methods In In Interface in Addition to Public Abstract methods
+7. Functional Interfaces (An interface that contains only one abstract method, it can have any number of default
+and static Methods, Few Functional Interfaces already present before java8 Runnable Callable and Comparator.
