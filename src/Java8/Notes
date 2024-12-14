@@ -12,3 +12,49 @@
 6. Introduction of Default methods In In Interface in Addition to Public Abstract methods
 7. Functional Interfaces (An interface that contains only one abstract method, it can have any number of default
 and static Methods, Few Functional Interfaces already present before java8 Runnable Callable and Comparator.
+== What is Java?
+High Level OOP language
+
+==Platform Independent
+because the compiler compiles the code and then converts it to platform-independent byte code which can be run
+on multiple systems. to run that byte-code the machine should have JRE installed
+
+== Heap Vs Stack
+Stack Memory
+Purpose: Used for static memory allocation and execution of a thread.
+Storage: Stores primitive data types (int, char, etc.), method calls, and references to objects in the heap.
+Lifespan: Memory is automatically managed with the Last-In-First-Out (LIFO) principle.
+Heap Memory
+Purpose: Used for dynamic memory allocation for objects and class instances.
+Storage: Stores all objects and arrays created with the new keyword.
+Lifespan: Objects in the heap are managed by the Garbage Collector, which automatically frees memory that is no
+longer in use.
+Java Utilizes this memory as -
+When we write a java program then all the variables, methods, etc are stored in the stack memory.
+And when we create any object in the java program then that object was created in the heap memory.
+And it was referenced from the stack memory.
+
+== instance variable and a local variable?
+Those variable which are accessed by all the methods in the class
+Those Variable which are present within a block
+
+== Data encapsulation?
+Data Encapsulation is an Object-Oriented Programming concept of hiding the data attributes and
+their behaviours in a single unit.
+It helps developers to follow modularity while developing software by ensuring that each object
+is independent of other objects by having its own methods, attributes, and functionalities.
+It is used for the security of the private properties of an object and hence serves the purpose
+of data hiding.
+
+
+==JIT compiler
+When a Java program is executed, the JVM interprets the bytecode.
+The JIT compiler identifies frequently executed code (hot spots) and compiles them into native machine code.
+This compiled code is then executed directly by the CPU, which is much faster than interpreting bytecode
+++Benefits
+1. Performance 2. Optimization
+Java Source => Compiler => Byte Code => JIT Compiler => Native Code
+
+==Can you tell the difference between equals() method and equality operator (==) in Java?
+.equals() Used to compare the contents of two objects to determine if they are logically equal.
+(==) Used to compare the references of two objects to determine if they point to the same memory location.
