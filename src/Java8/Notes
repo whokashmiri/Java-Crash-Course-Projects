@@ -58,3 +58,68 @@ Java Source => Compiler => Byte Code => JIT Compiler => Native Code
 ==Can you tell the difference between equals() method and equality operator (==) in Java?
 .equals() Used to compare the contents of two objects to determine if they are logically equal.
 (==) Used to compare the references of two objects to determine if they point to the same memory location.
+
+==Constructor
+A constructor in Java is a special method that is used to initialize objects. The constructor is called when an
+object of a class is created. At the time of calling the constructor, memory for the object is allocated in the memory.
+class Hello{ (this is the Class)
+Hello(){ (this is instance of the class called as Constructor )
+}
+
+}
+
+
+==Constructor Overloading
+Constructor overloading in Java is a technique that allows a class to have more than one constructor, each with
+a different parameter list.
+
+// Regular constructor public
+Person(String name, int age)
+{ this.name = name; this.age = age; }
+// Copy constructor
+public Person(Person other)
+{ this.name = other.name;
+this.age = other.age; }
+
+
+==method overloading and overriding
+method overloading is made possible by introducing different methods in the same class consisting of the same name.
+Still, all the functions differ in the number or type of parameters.
+class OverloadingHelp {
+   public int findarea (int l, int b) {
+           int var1;
+           var1 = l * b;
+           return var1;
+   }
+   public int findarea (int l, int b, int h) {
+           int var2;
+           var2 = l * b * h;
+           return var2;
+   }
+}
+
+Method overriding allows a subclass to provide a specific implementation of a method that is already
+defined in its superclass.
+
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myAnimal = new Animal();
+        Animal myDog = new Dog();
+
+        myAnimal.sound(); // Output: Animal makes a sound
+        myDog.sound();    // Output: Dog barks
+    }
+}
