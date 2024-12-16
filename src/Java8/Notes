@@ -123,3 +123,103 @@ public class Main {
         myDog.sound();    // Output: Dog barks
     }
 }
+
+
+==Final Finally and (Finalize-> it is Used for cleanup it is deprecated then removed);
+Final: If any restriction is required for classes, variables, or methods, the final keyword comes in handy.
+Inheritance of a final class and overriding of a final method is restricted by the use of the final keyword.
+The variable value becomes fixed after incorporating the final keyword. Example:
+final int a=100;
+a = 0;  // error
+Finally: It is the block present in a program where all the codes written inside it get executed irrespective of
+handling of exceptions.
+try {
+int variable = 5;
+}
+catch (Exception exception) {
+System.out.println("Exception occurred");
+}
+finally {
+System.out.println("Execution of finally block");
+}
+
+
+==finally’ block will not be executed
+Suppose we use System.exit() in the above statement.
+If there are fatal errors like Stack overflow, Memory access error, etc.
+
+== When can you use super keyword?
+Accessing Superclass Methods: You can use super to call a method from the superclass that has been overridden
+in the subclass.
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        super.sound(); // Calls the sound method from Animal class
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.sound(); // Output: Animal makes a sound
+                    //         Dog barks
+    }
+}
+
+Accessing Superclass Constructors: You can use super to call a constructor from the superclass. This must be the
+first statement in the subclass constructor.
+class Animal {
+    Animal(String name) {
+        System.out.println("Animal constructor called: " + name);
+    }
+}
+
+class Dog extends Animal {
+    Dog(String name) {
+        super(name); // Calls the constructor of Animal class
+        System.out.println("Dog constructor called: " + name);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog("Buddy"); // Output: Animal constructor called: Buddy
+                                    //         Dog constructor called: Buddy
+    }
+}
+
+Accessing Superclass Fields: You can use super to access a field from the superclass when there is a field with the
+same name in the subclass.
+class Animal {
+    String color = "white";
+}
+
+class Dog extends Animal {
+    String color = "black";
+
+    void printColor() {
+        System.out.println("Dog color: " + color); // Output: Dog color: black
+        System.out.println("Animal color: " + super.color); // Output: Animal color: white
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.printColor();
+    }
+}
+
+==Why is the main method static in Java?
+1. Entry Point: serves as the entry point->When the Java Virtual Machine (JVM) starts, it needs a way to execute the
+program without creating an instance of the class. By making the main method static, the JVM can call it
+directly using the class name.
+2. No Object Required: Since the main method is static, it can be called without creating an object of the class.
+This is crucial because, at the start of the program, there are no objects created yet.
