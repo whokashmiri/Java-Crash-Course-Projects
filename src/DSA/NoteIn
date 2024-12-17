@@ -1,0 +1,11 @@
+==what are the reasons behind making strings immutable in Java
+
+In short, immutability makes strings safe to share, thread-safe, and reliable when used in collections
+String Pool
+Optimization: Java designers knew strings would be heavily used, so they created a "String pool" to store string
+literals.
+Sharing: Immutable strings can be shared safely. Mutable strings can't be shared because they can change, causing
+issues.
+Collections
+HashMaps and HashTables: Strings are often used as keys. If strings were mutable, they could change after being added
+to a collection, causing problems with data retrieval. Immutable strings prevent this issue.
