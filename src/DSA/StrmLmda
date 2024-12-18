@@ -1,0 +1,5 @@
+==Streams vs Collections
+Purpose: Streams are designed for processing data, while Collections are designed for storing data.
+Evaluation: Streams use lazy evaluation, whereas Collections use eager evaluation (Operations performed Immediately).
+Mutability: Streams are immutable, while Collections are mutable.
+Parallelism: Streams provide built-in support for parallel processing, while Collections do not.

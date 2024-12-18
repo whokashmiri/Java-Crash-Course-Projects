@@ -3,6 +3,8 @@ package Java8;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static java.util.Arrays.stream;
+
 public class Streams {
     public static void main(String[] args) {
         //Add numbers
@@ -24,22 +26,38 @@ public class Streams {
 //       List<Integer> list1 = list.stream().map(e->String.valueOf(e)).filter(e->e.startsWith("2"))
 //                .map(Integer::valueOf).collect(Collectors.toList());
 
+//
+//        List<Integer> list = Arrays.asList(2,5,4,1,8 ,0);
+//     List<Integer> even =   list.stream().filter(e->e%2==0).collect(Collectors.toList());
+//        System.out.println(even);
+//
+//        List<Integer> oddList = Arrays.asList(2,5,4,1,8 ,0);
+//        List<Integer>odd =   oddList.stream().filter(e->e%2!=0).collect(Collectors.toList());
+//        System.out.println(odd);
+//
+//
+//        List<Integer> list1 = Arrays.asList(5,9,1,8,9,8,9);
+//       Set<Integer> duplicate = list1.stream().filter(e-> Collections.frequency(list1,e)>1).collect(Collectors.toSet());
+//        System.out.println(duplicate);
+//
+//        Set<Integer> set = new HashSet<>();
+//        Set<Integer> dup = list1.stream().filter(e->!set.add(e)).collect(Collectors.toSet());
+//        System.out.println(dup);
 
-        List<Integer> list = Arrays.asList(2,5,4,1,8 ,0);
-     List<Integer> even =   list.stream().filter(e->e%2==0).collect(Collectors.toList());
-        System.out.println(even);
+        List<Integer>  list = Arrays.asList(2,6,5,8,7,4);
+//        list.stream().findFirst().ifPresent(System.out::println); //1 way
+//      Optional<Integer> op=  list.stream().findFirst(); //2 way
 
-        List<Integer> oddList = Arrays.asList(2,5,4,1,8 ,0);
-        List<Integer>odd =   oddList.stream().filter(e->e%2!=0).collect(Collectors.toList());
-        System.out.println(odd);
+//        System.out.println(list.stream().count());
+//        System.out.println((long) list.size());
+
+        list.stream().filter(nums->nums%2==0).forEach(System.out::println);
+        list.stream().filter(nums->nums%2!=0).forEach(System.out::println);
+        System.out.println();
+
+//
 
 
-        List<Integer> list1 = Arrays.asList(5,9,1,8,9,8,9);
-       Set<Integer> duplicate = list1.stream().filter(e-> Collections.frequency(list1,e)>1).collect(Collectors.toSet());
-        System.out.println(duplicate);
 
-        Set<Integer> set = new HashSet<>();
-        Set<Integer> dup = list1.stream().filter(e->!set.add(e)).collect(Collectors.toSet());
-        System.out.println(dup);
     }
 }
