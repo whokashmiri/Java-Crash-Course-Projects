@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Begin;
 
 import java.util.Scanner;
 

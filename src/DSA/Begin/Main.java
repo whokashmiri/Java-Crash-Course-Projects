@@ -1,6 +1,4 @@
-package DSA;
-
-import java.util.Scanner;
+package DSA.Begin;
 
 public class Main {
     public static void main(String[] args) {

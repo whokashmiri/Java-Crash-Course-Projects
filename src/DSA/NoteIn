@@ -1,5 +1,4 @@
 ==what are the reasons behind making strings immutable in Java
-
 In short, immutability makes strings safe to share, thread-safe, and reliable when used in collections
 String Pool
 Optimization: Java designers knew strings would be heavily used, so they created a "String pool" to store string
@@ -9,3 +8,10 @@ issues.
 Collections
 HashMaps and HashTables: Strings are often used as keys. If strings were mutable, they could change after being added
 to a collection, causing problems with data retrieval. Immutable strings prevent this issue.
+
+==differentiate between a String, StringBuffer, and a StringBuilder?
+Storage area: In string, the String pool serves as the storage area. For StringBuilder and StringBuffer, heap memory
+is the storage area.
+Mutability: A String is immutable, whereas both the StringBuilder and StringBuffer are mutable.
+Efficiency: It is quite slow to work with a String. However, StringBuilder is the fastest in performing operations.
+The speed of a StringBuffer is more than a String and less than a StringBuilder.

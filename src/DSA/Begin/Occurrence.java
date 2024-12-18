@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Begin;
 
 public class Occurrence {
     public static void main(String[] args) {
