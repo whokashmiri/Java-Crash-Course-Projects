@@ -15,3 +15,10 @@ is the storage area.
 Mutability: A String is immutable, whereas both the StringBuilder and StringBuffer are mutable.
 Efficiency: It is quite slow to work with a String. However, StringBuilder is the fastest in performing operations.
 The speed of a StringBuffer is more than a String and less than a StringBuilder.
+
+
+==HashSet
+A HashSet in Java is a collection class that implements the Set interface, which means it stores a collection of
+unique elements. It does not allow duplicate elements. Internally, a HashSet uses a HashMap to store its elements.
+Each element in the HashSet is stored as a key in the HashMap,
+A list can contain duplicate elements whereas Set contains unique elements only.
