@@ -22,3 +22,9 @@ A HashSet in Java is a collection class that implements the Set interface, which
 unique elements. It does not allow duplicate elements. Internally, a HashSet uses a HashMap to store its elements.
 Each element in the HashSet is stored as a key in the HashMap,
 A list can contain duplicate elements whereas Set contains unique elements only.
+
+==ArrayList
+Java ArrayList is a part of collections framework and it is a class of java.util package. It provides us with
+dynamic arrays in Java. Though, it may be slower than standard arrays but can be helpful in programs where lots
+of manipulation in array is required. The main advantage of ArrayList is, unlike normal arrays, we don’t need to
+mention the size when creating ArrayList. It automatically adjusts its capacity as elements are added or removed.
