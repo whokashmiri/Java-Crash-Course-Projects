@@ -28,3 +28,19 @@ Java ArrayList is a part of collections framework and it is a class of java.util
 dynamic arrays in Java. Though, it may be slower than standard arrays but can be helpful in programs where lots
 of manipulation in array is required. The main advantage of ArrayList is, unlike normal arrays, we don’t need to
 mention the size when creating ArrayList. It automatically adjusts its capacity as elements are added or removed.
+
+==What are Interfaces in Java?
+The interface in Java is a mechanism to achieve abstraction. Traditionally, an interface could only have abstract
+methods (methods without a body) and public, static, and final variables by default. It is used to achieve
+abstraction and multiple inheritances in Java. In other words, interfaces primarily define methods that other
+classes must implement.
+Purpose:
+Interfaces are used to achieve abstraction and multiple inheritance in Java.
+They allow different classes to implement the same set of methods, ensuring a consistent interface.
+
+==What is Abstract Class in Java
+An abstract class in Java is like a blueprint for other classes. It cannot be instantiated on its own, meaning you
+can't create an object directly from it. Instead, it's meant to be extended by other classes.
+Purpose:
+Abstract classes are used to provide a common base for subclasses.
+They can define methods that must be implemented by subclasses, ensuring a consistent interface.

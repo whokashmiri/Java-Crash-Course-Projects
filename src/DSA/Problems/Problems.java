@@ -1,6 +1,5 @@
-package DSA;
+package DSA.Problems;
 
-import java.util.Arrays;
 import java.util.HashSet;
 
 public class Problems {
