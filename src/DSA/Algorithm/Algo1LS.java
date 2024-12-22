@@ -1,6 +1,6 @@
 package DSA.Algorithm;
 
-public class LinearSearch {
+public class Algo1LS {
     public static void main(String[] args) {
         int [] arr = {5,6,3,4,6};
         if(arr.length <= 0){

@@ -1,6 +1,6 @@
 package DSA.Algorithm;
 
-public class BinarySearch {
+public class Algo2BS {
     public static void main(String[] args) {
         int [] arr = {-2 ,2,3,4,55 ,68,79,80};
         System.out.println( biSearch(arr ,79 ));
