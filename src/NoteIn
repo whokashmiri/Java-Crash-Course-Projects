@@ -44,3 +44,8 @@ can't create an object directly from it. Instead, it's meant to be extended by o
 Purpose:
 Abstract classes are used to provide a common base for subclasses.
 They can define methods that must be implemented by subclasses, ensuring a consistent interface.
+
+==Features of OOP
+1. Inheritance
+A class that is able to use the properties of parent class(extends is used to inherit the properties of parent
+  class)
