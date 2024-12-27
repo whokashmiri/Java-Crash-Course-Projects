@@ -49,3 +49,12 @@ They can define methods that must be implemented by subclasses, ensuring a consi
 1. Inheritance
 A class that is able to use the properties of parent class(extends is used to inherit the properties of parent
   class)
+
+  Key Differences
+  Inheritance: Abstract classes support single inheritance, while interfaces support multiple inheritance.
+
+  Methods: Abstract classes can have both abstract and concrete methods, while interfaces (before Java 8) can have only abstract methods. From Java 8 onwards, interfaces can also have default methods.
+
+  Fields: Abstract classes can have instance variables, while interfaces can have only static and final variables.
+
+  Constructors: Abstract classes can have constructors, while interfaces cannot.
