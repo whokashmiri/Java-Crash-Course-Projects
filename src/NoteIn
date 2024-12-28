@@ -58,3 +58,14 @@ A class that is able to use the properties of parent class(extends is used to in
   Fields: Abstract classes can have instance variables, while interfaces can have only static and final variables.
 
   Constructors: Abstract classes can have constructors, while interfaces cannot.
+
+
+  1. Compile-Time Polymorphism (Method Overloading)
+  Compile-time polymorphism, also known as method overloading, occurs when multiple methods in the same class
+  have the same name but different parameters (different type, number, or both). The method to be called is
+  determined at compile time.
+
+  Run-Time Polymorphism (Method Overriding)
+  Run-time polymorphism, also known as method overriding, occurs when a subclass provides a specific
+  implementation of a method that is already defined in its superclass. The method to be called is
+  determined at runtime based on the object's actual type
