@@ -1,0 +1,114 @@
+==Difference between Spring and Spring Boot
+Spring is an open-source lightweight framework that allows Java developers to build simple, reliable, and scalable
+enterprise applications. This framework mainly focuses on providing various ways to help you manage your
+business objects. It made the development of Web applications much easier compared to classic Java frameworks
+and Application Programming Interfaces (APIs), such as Java database connectivity (JDBC), JavaServer Pages (JSP),
+and Java Servlet
+1. The most important feature of the Spring Framework is dependency injection
+2. It helps to create a loosely coupled application.
+3. To run the Spring application, we need to set the server explicitly.
+4. To create a Spring application, the developers write lots of code.
+
+Spring Boot
+Spring Boot is built on top of the conventional spring framework. So, it provides all the features of spring
+and is easier to use than spring. Spring Boot is a microservice-based framework and makes a production-ready
+application in very less time. In Spring Boot everything is auto configured.
+1. The most important feature of the Spring Boot is Autoconfiguration.
+2. It helps to create a stand-alone application.
+3. It helps to create a stand-alone application.
+4. It reduces the lines of code.
+
+== What are the main features of Spring Boot?
+1. Auto Configuration
+The spring boots use the annotation ‘@SpringBootApplication’ that triggers auto-configuration, which
+automatically sets up your application based on the libraries present in the classpath. It auto-configures
+your application based on what it sees, thus eliminating the need for specifying beans in the configuration
+file manually.
+2. Standalone Nature
+Spring Boot applications are self-contained, meaning they can run independently without relying on any
+external server. This facilitates microservices architecture, as developers can run the application
+independently without the need for an external server (like Tomcat). The embedded server (like Tomcat)
+is part of the deployable unit, and simplifies deployments.
+2. Standalone Nature
+Spring Boot applications are self-contained, meaning they can run independently without relying on any
+external server. This facilitates microservices architecture, as developers can run the application
+independently without the need for an external server (like Tomcat). The embedded server (like Tomcat)
+is part of the deployable unit, and simplifies deployments.
+
+
+==What is the purpose of the application.properties or application.yml file in a Spring Boot application?
+It’s used to configure application properties such as database settings, server ports, and
+logging levels.
+
+
+==Explain the concept of dependency injection.
+  Dependency injection is a design pattern where objects are provided their dependencies rather than
+  creating them.
+
+==What is the difference between @Component, @Service, and @Repository annotations?
+@Component: General-purpose annotation for Spring-managed beans.
+In Spring, the @Component annotation is a stereotype annotation that marks a class as a Spring-managed
+component. This means that the Spring container will automatically detect and create an instance of the
+class, making it available for dependency injection.
+@Service: Specialization of @Component for service-layer beans.
+The business logic resides within the service layer so we use the @Service Annotation to indicate that a class
+belongs to that layer.
+@Repository: Specialization for data access objects; translates persistence exceptions into Spring exceptions.
+@Repository Annotation is also a specialization of @Component annotation which is used to indicate that the
+class provides the mechanism for storage, retrieval, update, delete and search operation on objects.
+==What are the advantages of using Spring Boot?
+Simplified configuration
+Embedded servers for easier deployment
+Reduced development time
+
+==How does the Spring Boot auto-configuration feature work?
+Based on the dependencies in the classpath, Spring Boot automatically configures the application.
+Spring Boot auto-configuration attempts to automatically configure your Spring application based on the jar
+dependencies that you have added
+
+==What is the use of the @SpringBootApplication annotation?
+@SpringBootApplication Annotation
+The @SpringBootApplication annotation is a meta-annotation in Spring Boot that combines several other
+critical Spring annotations to simplify the setup and configuration of the Spring Boot application.
+It marks the main class as the configuration class and enables auto-configuration, which reduces the
+need for manual setup of beans and dependencies. This annotation signals to the Spring Framework that
+this is the main class responsible for launching the application.
+
+==Explain the difference between @Controller and @RestController.
+@Controller: Used for returning views (e.g., HTML).
+@RestController: Returns JSON or other response bodies directly.
+
+==What is the purpose of the @RequestMapping annotation?
+Maps HTTP requests to handler methods in controllers.
+
+How is @PathVariable different from @RequestParam?
+@PathVariable is used to extract values directly from the URL path (part of the URI), while @RequestParam is
+used to retrieve values from query parameters appended to the URL
+
+==What is the use of the @Autowired annotation?
+@Autowired is one of the core annotations in Spring, used for automatic dependency injection. In simpler
+terms, it allows Spring to automatically wire the required beans (dependencies) into your classes, eliminating
+the need for manual configuration.
+
+==What is Spring Data JPA, and why is it used?
+The java persistence API provides a specification for persisting, reading, and managing data from your
+java object to your relational tables in the database. JPA specifies the set of rules and guidelines
+for developing interfaces that follow standards.
+
+==What is the purpose of the @Entity annotation?
+Marks a class as a JPA entity mapped to a database table.
+
+==What is the difference between save() and saveAndFlush() in JPA?
+save(): Saves the entity but doesn't immediately write to the database.
+saveAndFlush(): Saves and immediately writes changes to the database.
+
+==What are RESTful web services?
+RESTful services use HTTP methods (GET, POST, PUT, DELETE) for CRUD operations, adhering to REST principles.
+Web services that follow the REST architectural style are known as RESTful web services.
+
+==What is the purpose of @GetMapping, @PostMapping, @PutMapping, and @DeleteMapping?
+These annotations map HTTP methods to handler methods
+
+
+==How can you secure a Spring Boot application?
+Use Spring Security to configure authentication and authorization, including custom roles and permissions.
