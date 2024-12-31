@@ -15,8 +15,13 @@ and is easier to use than spring. Spring Boot is a microservice-based framework 
 application in very less time. In Spring Boot everything is auto configured.
 1. The most important feature of the Spring Boot is Autoconfiguration.
 2. It helps to create a stand-alone application.
-3. It helps to create a stand-alone application.
+3. Comes with embedded servers like Tomcat, Jetty, or Undertow, making it easy to run applications without
+external server setup.
 4. It reduces the lines of code.
+
+Spring Boot is designed to simplify the development and deployment of Spring applications by providing a more
+streamlined and opinionated approach, while the Spring Framework offers more flexibility and control for
+developers who need it.
 
 == What are the main features of Spring Boot?
 1. Auto Configuration
@@ -24,11 +29,6 @@ The spring boots use the annotation ‘@SpringBootApplication’ that triggers a
 automatically sets up your application based on the libraries present in the classpath. It auto-configures
 your application based on what it sees, thus eliminating the need for specifying beans in the configuration
 file manually.
-2. Standalone Nature
-Spring Boot applications are self-contained, meaning they can run independently without relying on any
-external server. This facilitates microservices architecture, as developers can run the application
-independently without the need for an external server (like Tomcat). The embedded server (like Tomcat)
-is part of the deployable unit, and simplifies deployments.
 2. Standalone Nature
 Spring Boot applications are self-contained, meaning they can run independently without relying on any
 external server. This facilitates microservices architecture, as developers can run the application
@@ -56,6 +56,7 @@ belongs to that layer.
 @Repository: Specialization for data access objects; translates persistence exceptions into Spring exceptions.
 @Repository Annotation is also a specialization of @Component annotation which is used to indicate that the
 class provides the mechanism for storage, retrieval, update, delete and search operation on objects.
+
 ==What are the advantages of using Spring Boot?
 Simplified configuration
 Embedded servers for easier deployment
