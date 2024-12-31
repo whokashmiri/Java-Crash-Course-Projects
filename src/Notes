@@ -1,4 +1,4 @@
-==What is the Purpose Of Java
+==What is the Purpose Of Java8
 1. To Write minimal and Concise Code
 2. To Introduce benefits Functional Programming
 3. To enable parallel Programming - To Write More Compatible Code for multi core processors-
@@ -61,7 +61,8 @@ Java Source => Compiler => Byte Code => JIT Compiler => Native Code
 
 ==Constructor
 A constructor in Java is a special method that is used to initialize objects. The constructor is called when an
-object of a class is created. At the time of calling the constructor, memory for the object is allocated in the memory.
+object of a class is created. At the time of calling the constructor, memory for the object is allocated in
+the memory.
 class Hello{ (this is the Class)
 Hello(){ (this is instance of the class called as Constructor )
 }
@@ -199,8 +200,8 @@ public class Main {
     }
 }
 
-Accessing Superclass Fields: You can use super to access a field from the superclass when there is a field with the
-same name in the subclass.
+Accessing Superclass Fields: You can use super to access a field from the superclass when there is a field with
+the same name in the subclass.
 class Animal {
     String color = "white";
 }
