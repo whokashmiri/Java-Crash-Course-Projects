@@ -42,8 +42,8 @@ logging levels.
 
 
 ==Explain the concept of dependency injection.
-  Dependency injection is a design pattern where objects are provided their dependencies rather than
-  creating them.
+ Dependency injection is a design pattern where objects are provided their dependencies rather than
+ creating them.
 
 ==What is the difference between @Component, @Service, and @Repository annotations?
 @Component: General-purpose annotation for Spring-managed beans.
