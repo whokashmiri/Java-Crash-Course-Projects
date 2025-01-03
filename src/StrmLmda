@@ -3,3 +3,20 @@ Purpose: Streams are designed for processing data, while Collections are designe
 Evaluation: Streams use lazy evaluation, whereas Collections use eager evaluation (Operations performed Immediately).
 Mutability: Streams are immutable, while Collections are mutable.
 Parallelism: Streams provide built-in support for parallel processing, while Collections do not.
+
+
+OOP
+
+
+
+ABSTRACTION
+In Java, abstraction is a concept that allows you to hide the complex implementation details and show only
+the essential features of an object. Think of it like a car: when you drive, you don't need to know how the
+ engine works; you just need to know how to use the steering wheel, pedals, and other controls. Similarly,
+  in Java, abstraction lets you focus on what an object does rather than how it does it.
+
+In Java, abstraction is achieved using:
+Abstract Classes: These are classes that cannot be instantiated on their own and can have both abstract
+methods (without a body) and concrete methods (with a body).
+Interfaces: These are like contracts that define what methods a class should implement, without providing
+the actual implementation.
