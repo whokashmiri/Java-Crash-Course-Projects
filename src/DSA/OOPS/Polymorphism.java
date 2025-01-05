@@ -28,33 +28,33 @@ public class Polymorphism {
 
 
 //
-//class Animal {
-//    void makeSound() {
-//        System.out.println("Animal makes a sound");
-//    }
-//}
-//
-//class Dog extends Animal {
-//    @Override
-//    void makeSound() {
-//        System.out.println("Dog barks");
-//    }
-//}
-//
-//class Cat extends Animal {
-//    @Override
-//    void makeSound() {
-//        System.out.println("Cat meows");
-//    }
-//}
-//
-//public class Main {
-//    public static void main(String[] args) {
-//        Animal myDog = new Dog();
-//        Animal myCat = new Cat();
-//
-//        myDog.makeSound(); // Calls Dog's makeSound()
-//        myCat.makeSound(); // Calls Cat's makeSound()
-//    }
-//}
-//
+class Animall {
+    void makeSound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animall {
+    @Override
+    void makeSound() {
+        System.out.println("Dog barks");
+    }
+}
+
+class Cat extends Animall {
+    @Override
+    void makeSound() {
+        System.out.println("Cat meows");
+    }
+}
+
+ class Main {
+    public static void main(String[] args) {
+        Animall myDog = new Dog();
+        Animall myCat = new Cat();
+
+        myDog.makeSound(); // Calls Dog's makeSound()
+        myCat.makeSound(); // Calls Cat's makeSound()
+    }
+}
+

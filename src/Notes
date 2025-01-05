@@ -38,13 +38,7 @@ And it is referenced from the stack memory.
 Those variable which are accessed by all the methods in the class
 Those Variable which are present within a block
 
-== Data encapsulation?
-Data Encapsulation is an Object-Oriented Programming concept of hiding the data attributes and
-their behaviours in a single unit.
-It helps developers to follow modularity while developing software by ensuring that each object
-is independent of other objects by having its own methods, attributes, and functionalities.
-It is used for the security of the private properties of an object and hence serves the purpose
-of data hiding.
+
 
 
 ==JIT compiler

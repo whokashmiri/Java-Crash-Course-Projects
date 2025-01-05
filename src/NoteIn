@@ -45,6 +45,23 @@ Purpose:
 Abstract classes are used to provide a common base for subclasses.
 They can define methods that must be implemented by subclasses, ensuring a consistent interface.
 
+==Abstraction
+Data abstraction is the process of hiding certain details and showing only essential information to the user.
+Abstraction can be achieved with either abstract classes or interfaces
+Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited
+from another class).
+Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by
+the subclass (inherited from).
+
+
+== Data encapsulation?
+Data Encapsulation is an Object-Oriented Programming concept of hiding the data attributes and
+their behaviours in a single unit.
+It helps developers to follow modularity while developing software by ensuring that each object
+is independent of other objects by having its own methods, attributes, and functionalities.
+It is used for the security of the private properties of an object and hence serves the purpose
+of data hiding.
+
 ==Features of OOP
 1. Inheritance
 A class that is able to use the properties of parent class(extends is used to inherit the properties of parent
@@ -59,6 +76,9 @@ A class that is able to use the properties of parent class(extends is used to in
   Constructors: Abstract classes can have constructors, while interfaces cannot.
 
 
+==Polymorphism in Java refers to the ability of a single method, class, or interface to operate in different
+ways depending on the context. It is one of the key principles of Object-Oriented Programming (OOP) and
+allows for more flexible and reusable code.
   1. Compile-Time Polymorphism (Method Overloading)
   Compile-time polymorphism, also known as method overloading, occurs when multiple methods in the same class
   have the same name but different parameters (different type, number, or both). The method to be called is
@@ -68,3 +88,7 @@ A class that is able to use the properties of parent class(extends is used to in
   Run-time polymorphism, also known as method overriding, occurs when a subclass provides a specific
   implementation of a method that is already defined in its superclass. The method to be called is
   determined at runtime based on the object's actual type
+
+  Inheritance in Java is a core concept of Object-Oriented Programming (OOP) that allows a class (called a child
+   or subclass) to inherit the properties and methods of another class (called a parent or superclass). It
+   facilitates code reuse, enhances maintainability, and promotes hierarchical class structures.
