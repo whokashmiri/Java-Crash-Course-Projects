@@ -113,3 +113,17 @@ These annotations map HTTP methods to handler methods
 
 ==How can you secure a Spring Boot application?
 Use Spring Security to configure authentication and authorization, including custom roles and permissions.
+
+==FetchType.LAZY,
+When you use FetchType.LAZY, the related entities are not immediately loaded from the database when the parent
+entity is fetched. Instead, they are loaded on-demand, only when you explicitly access them.
+
+==CascadeType.ALL
+In Spring Boot, the CascadeType.ALL option is used in JPA (Java Persistence API) to apply all cascade operations
+to the associated entity. This means that any operation performed on the parent entity will also be applied to
+ the child entity. The cascade operations include:
+PERSIST: When the parent entity is persisted (saved), the child entity is also persisted.
+MERGE: When the parent entity is merged (updated), the child entity is also merged.
+REMOVE: When the parent entity is removed (deleted), the child entity is also removed.
+REFRESH: When the parent entity is refreshed, the child entity is also refreshed.
+DETACH: When the parent entity is detached, the child entity is also detached.
