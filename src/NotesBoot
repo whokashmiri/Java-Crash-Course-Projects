@@ -127,3 +127,18 @@ MERGE: When the parent entity is merged (updated), the child entity is also merg
 REMOVE: When the parent entity is removed (deleted), the child entity is also removed.
 REFRESH: When the parent entity is refreshed, the child entity is also refreshed.
 DETACH: When the parent entity is detached, the child entity is also detached.
+
+==SecurityFilterChain what does it do in simple terms
+
+In simple terms, SecurityFilterChain in Spring Security is used to define how security should be applied to
+different parts of your web application. Here's what it does:
+Filters Requests: It filters incoming HTTP requests to decide whether they should be allowed, denied, or
+require some form of authentication or authorization.
+Configures Security Features: You can set up various security features like authentication (who can access
+the application), authorization (what they can do once they're in), session management, CSRF protection,
+and more for specific URL patterns or the entire application.
+Chain of Security Filters: It's called a "chain" because it can involve multiple security filters (like
+authentication filters, authorization filters, etc.) that work together in sequence to secure your application.
+Each filter in the chain handles a specific aspect of security
+Customization: Allows developers to customize security settings for different paths or endpoints in the application.
+For example, you might require authentication for some URLs while leaving others open to the public.
