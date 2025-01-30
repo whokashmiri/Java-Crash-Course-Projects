@@ -2,7 +2,7 @@ package DSA.Recursion;
 
 public class RecursionOne {
     public static void main(String[] args) {
-        System.out.println(fib(6));
+        System.out.println(fib(50));
 
     }
     static  int fib(int n){
