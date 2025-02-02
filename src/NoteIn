@@ -92,3 +92,8 @@ allows for more flexible and reusable code.
   Inheritance in Java is a core concept of Object-Oriented Programming (OOP) that allows a class (called a child
    or subclass) to inherit the properties and methods of another class (called a parent or superclass). It
    facilitates code reuse, enhances maintainability, and promotes hierarchical class structures.
+
+
+  --TIME AND SPACE COMPLEXITY--
+Time complexity is Function that gives us the Relationship about , how the time will grow as the input
+ grows
